@@ -35,4 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# edgedb
 dbschema/edgeql-js
+
+# turbo
+.turbo
+/tmp/

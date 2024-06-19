@@ -3,16 +3,8 @@
 import { auth } from "./edgedb";
 import { redirect } from "next/navigation";
 
-const {
-	signout,
-	emailPasswordSignIn,
-	emailPasswordSendPasswordResetEmail,
-	emailPasswordResendVerificationEmail,
-	emailPasswordResetPassword,
-	emailPasswordSignUp,
-	magicLinkSignIn,
-	magicLinkSignUp,
-} = auth.createServerActions();
+const { signout, emailPasswordSignIn, emailPasswordSignUp } =
+	auth.createServerActions();
 
 export const handleSignout = async () => {
 	await signout();
